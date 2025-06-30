@@ -37,7 +37,7 @@ export const Todo = () => {
         </div>
         <ArrowRightCircleIcon
         onClick={logout}
-        className="h-6 w-6 my-6 text-blue-500 cursor-pointer"
+        className="h-10 w-10 my-6 text-blue-500 cursor-pointer"
         />
         <form onSubmit={submitTaskHandler}>
             <input
