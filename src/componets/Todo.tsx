@@ -1,6 +1,6 @@
 import { FormEvent } from "react"
 import { useQueryClient } from "@tanstack/react-query"
-import { ArrowRightCircleIcon,ShieldCheckIcon } from "@heroicons/react/24/solid"
+import { ArrowRightOnRectangleIcon,ShieldCheckIcon } from "@heroicons/react/24/solid"
 import useStore from "../store"
 import { useQueryTasks } from "../hooks/useQueryTasks"
 import { useMutateTask } from "../hooks/useMutateTask"
@@ -35,14 +35,14 @@ export const Todo = () => {
                 Task manager
             </span>
         </div>
-        <ArrowRightCircleIcon
+        <ArrowRightOnRectangleIcon
         onClick={logout}
         className="h-6 w-6 my-6 text-blue-500 cursor-pointer"
         />
         <form onSubmit={submitTaskHandler}>
             <input
-                className="border border-gray-300 py-2 px-3 mr-3 mb-3"
-                placeholder="TODO??"
+                className="border border-gray-300 py-2 px-1 mr-1 mb-3"
+                placeholder=" TODO??"
                 type="text" 
                 onChange={(e) => updateTask({...editedTask, title: e.target.value })}
                 value={editedTask.title || ''}
