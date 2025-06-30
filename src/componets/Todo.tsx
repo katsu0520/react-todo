@@ -1,6 +1,6 @@
 import { FormEvent } from "react"
 import { useQueryClient } from "@tanstack/react-query"
-import { ArrowRightOnRectangleIcon,ShieldCheckIcon } from "@heroicons/react/24/solid"
+import { ArrowRightCircleIcon,ShieldCheckIcon } from "@heroicons/react/24/solid"
 import useStore from "../store"
 import { useQueryTasks } from "../hooks/useQueryTasks"
 import { useMutateTask } from "../hooks/useMutateTask"
@@ -35,7 +35,7 @@ export const Todo = () => {
                 Task manager
             </span>
         </div>
-        <ArrowRightOnRectangleIcon
+        <ArrowRightCircleIcon
         onClick={logout}
         className="h-6 w-6 my-6 text-blue-500 cursor-pointer"
         />
